@@ -16,5 +16,18 @@ namespace MegaDesk_3_JalynZamora
         {
             InitializeComponent();
         }
+
+        private void DisplayQuotes_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            var mainMenu = (MainMenu)Tag;
+            mainMenu.Show();
+        }
+
+        private void MainMenuButton_Click(object sender, EventArgs e)
+        {
+            var mainMenu = (MainMenu)Tag;
+            mainMenu.Show();
+            Close();
+        }
     }
 }
