@@ -33,6 +33,13 @@
             this.widthLabel = new System.Windows.Forms.Label();
             this.depthLabel = new System.Windows.Forms.Label();
             this.depthInput = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.customerName = new System.Windows.Forms.Label();
+            this.numOfDrawers = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.surfaceMaterial = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.quoteButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // MainMenuButton
@@ -47,7 +54,7 @@
             // 
             // widthInput
             // 
-            this.widthInput.Location = new System.Drawing.Point(155, 121);
+            this.widthInput.Location = new System.Drawing.Point(146, 121);
             this.widthInput.Name = "widthInput";
             this.widthInput.Size = new System.Drawing.Size(168, 20);
             this.widthInput.TabIndex = 1;
@@ -57,7 +64,7 @@
             // widthLabel
             // 
             this.widthLabel.AutoSize = true;
-            this.widthLabel.Location = new System.Drawing.Point(111, 124);
+            this.widthLabel.Location = new System.Drawing.Point(102, 124);
             this.widthLabel.Name = "widthLabel";
             this.widthLabel.Size = new System.Drawing.Size(38, 13);
             this.widthLabel.TabIndex = 2;
@@ -66,7 +73,7 @@
             // depthLabel
             // 
             this.depthLabel.AutoSize = true;
-            this.depthLabel.Location = new System.Drawing.Point(446, 124);
+            this.depthLabel.Location = new System.Drawing.Point(102, 183);
             this.depthLabel.Name = "depthLabel";
             this.depthLabel.Size = new System.Drawing.Size(39, 13);
             this.depthLabel.TabIndex = 3;
@@ -74,17 +81,82 @@
             // 
             // depthInput
             // 
-            this.depthInput.Location = new System.Drawing.Point(491, 121);
+            this.depthInput.Location = new System.Drawing.Point(146, 176);
             this.depthInput.Name = "depthInput";
             this.depthInput.Size = new System.Drawing.Size(166, 20);
             this.depthInput.TabIndex = 4;
             this.depthInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.depthInput_KeyPress);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(320, 72);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(169, 20);
+            this.textBox1.TabIndex = 5;
+            // 
+            // customerName
+            // 
+            this.customerName.AutoSize = true;
+            this.customerName.Location = new System.Drawing.Point(229, 72);
+            this.customerName.Name = "customerName";
+            this.customerName.Size = new System.Drawing.Size(85, 13);
+            this.customerName.TabIndex = 6;
+            this.customerName.Text = "Customer Name:";
+            // 
+            // numOfDrawers
+            // 
+            this.numOfDrawers.AutoSize = true;
+            this.numOfDrawers.Location = new System.Drawing.Point(392, 124);
+            this.numOfDrawers.Name = "numOfDrawers";
+            this.numOfDrawers.Size = new System.Drawing.Size(71, 13);
+            this.numOfDrawers.TabIndex = 7;
+            this.numOfDrawers.Text = "# of Drawers:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(469, 121);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(37, 20);
+            this.textBox2.TabIndex = 8;
+            // 
+            // surfaceMaterial
+            // 
+            this.surfaceMaterial.AutoSize = true;
+            this.surfaceMaterial.Location = new System.Drawing.Point(392, 179);
+            this.surfaceMaterial.Name = "surfaceMaterial";
+            this.surfaceMaterial.Size = new System.Drawing.Size(87, 13);
+            this.surfaceMaterial.TabIndex = 10;
+            this.surfaceMaterial.Text = "Surface Material:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(485, 176);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(126, 21);
+            this.comboBox1.TabIndex = 11;
+            // 
+            // quoteButton
+            // 
+            this.quoteButton.Location = new System.Drawing.Point(310, 294);
+            this.quoteButton.Name = "quoteButton";
+            this.quoteButton.Size = new System.Drawing.Size(109, 26);
+            this.quoteButton.TabIndex = 12;
+            this.quoteButton.Text = "Quote";
+            this.quoteButton.UseVisualStyleBackColor = true;
             // 
             // AddQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(709, 435);
+            this.Controls.Add(this.quoteButton);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.surfaceMaterial);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.numOfDrawers);
+            this.Controls.Add(this.customerName);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.depthInput);
             this.Controls.Add(this.depthLabel);
             this.Controls.Add(this.widthLabel);
@@ -105,5 +177,12 @@
         private System.Windows.Forms.Label widthLabel;
         private System.Windows.Forms.Label depthLabel;
         private System.Windows.Forms.TextBox depthInput;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label customerName;
+        private System.Windows.Forms.Label numOfDrawers;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label surfaceMaterial;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button quoteButton;
     }
 }
